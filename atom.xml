@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ye-1900.github.io</id>
-    <title></title>
-    <updated>2020-09-19T20:14:14.041Z</updated>
+    <title>诺坎普小王子</title>
+    <updated>2020-09-19T20:16:02.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ye-1900.github.io"/>
     <link rel="self" href="https://Ye-1900.github.io/atom.xml"/>
     <subtitle>随手涂鸦</subtitle>
     <logo>https://Ye-1900.github.io/images/avatar.png</logo>
     <icon>https://Ye-1900.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, </rights>
+    <rights>All rights reserved 2020, 诺坎普小王子</rights>
     <entry>
         <title type="html"><![CDATA[自由意志与决定论——笔记]]></title>
         <id>https://Ye-1900.github.io/post/du-shu-bi-ji-lesslesszuo-zhe-xue-greatergreater/</id>
