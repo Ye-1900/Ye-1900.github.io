@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | 诺坎普小王子</title>
+<title>读书笔记——《做哲学》 | 诺坎普小王子</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,28 @@
 <link rel="stylesheet" href="https://Ye-1900.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="随手涂鸦">
+    <meta name="description" content="一、因果决定论和非决定论
+1.什么是因果决定论？
+什么是强决定论？
+支持强决定论和论证是什么样的？
+科学是否表明因果决定论为真?
+反思的常识是否表明因果决定论为真？
+什么是因果的非决定论？
+什么是非决定论？
+泰勒“不可预知的手臂”这个思想实..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -76,40 +91,34 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">读书笔记——《做哲学》</h2>
+            <div class="post-date">2020-09-19</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="一-因果决定论和非决定论">一、因果决定论和非决定论</h1>
+<h2 id="1什么是因果决定论">1.什么是因果决定论？</h2>
+<h2 id="什么是强决定论">什么是强决定论？</h2>
+<h2 id="支持强决定论和论证是什么样的">支持强决定论和论证是什么样的？</h2>
+<h2 id="科学是否表明因果决定论为真">科学是否表明因果决定论为真?</h2>
+<h2 id="反思的常识是否表明因果决定论为真">反思的常识是否表明因果决定论为真？</h2>
+<h2 id="什么是因果的非决定论">什么是因果的非决定论？</h2>
+<h2 id="什么是非决定论">什么是非决定论？</h2>
+<h2 id="泰勒不可预知的手臂这个思想实验是怎么样的它如何试图动摇非决定论">泰勒“不可预知的手臂”这个思想实验是怎么样的？它如何试图动摇非决定论？</h2>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
+            
+
+            
               
-                
-                  <article class="post">
-                    <a href="https://Ye-1900.github.io/post/">
-                      <h2 class="post-title">
-                         
-                      </h2>
-                    </a>
-                  </article>
-                
+                <div id="gitalk-container" data-aos="fade-in"></div>
               
-                
-                  <article class="post">
-                    <a href="https://Ye-1900.github.io/post/2020-shu-xue-jian-mo-guo-sai/">
-                      <h2 class="post-title">
-                        2020数学建模国赛
-                      </h2>
-                    </a>
-                  </article>
-                
+
               
             
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
@@ -130,6 +139,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
