@@ -1,158 +1,99 @@
-
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
-<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
-<meta HTTP-EQUIV="expires" CONTENT="0"> 
-<title>自由意志与决定论——笔记 | </title>	
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+<title>自由意志与决定论——笔记 | </title>
+
+<link rel="shortcut icon" href="https://Ye-1900.github.io/favicon.ico?v=1600542866787">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Ye-1900.github.io/styles/main.css">
-<script type="text/javascript">
-function getCSS()
-{
-        datetoday = new Date();
-        timenow=datetoday.getTime();
-        datetoday.setTime(timenow);
-        thehour = datetoday.getHours();
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
 
-            display = "https://Ye-1900.github.io/media/css/night.css";
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
 
-            display = "https://Ye-1900.github.io/media/css/night.css";   
-      
-            display = "https://Ye-1900.github.io/media/css/day.css";
-
-            display = "https://Ye-1900.github.io/media/css/day.css";
-      
-
-var css = '<';
-        css+='link rel="stylesheet" href='+display+' \/';
-        css+='>';
-        document.write(css);
-}
-</script>
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Sans+SC:300|Montserrat&display=swap" rel="stylesheet">
-<link href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css" rel="stylesheet" />
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<script type='text/javascript' src='https://Ye-1900.github.io/media/scripts/script.js'></script>
-<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
-  <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script>wow=new WOW({boxClass:'wow',animateClass:'animated',offset:0,mobile:true,live:true});wow.init();</script>
-
-<script type="text/javascript">
-window.onload=getCSS();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
 
- 	
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
-<body class="post-template-default single single-post postid-70 single-format-standard">
-    <div id="wrapper">
-        
-			
-		<header id="header" class="site-header" 
-		
-		style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://Ye-1900.github.io/post-images/du-shu-bi-ji-lesslesszuo-zhe-xue-greatergreater.jpg)"
-		
-		>
-			<div class="site-branding">
-									<h1 class="site-title"><a href="https://Ye-1900.github.io" rel="home"></a></h1>
-										
-					<h2 class="site-description">随手涂鸦</h2>
-										
-							</div>
-			<nav id="nav-wrapper">
-				<div class="container">
-					<div class="nav-toggle">
-						<div class="bars">
-							<div class="bar"></div>
-							<div class="bar"></div>
-							<div class="bar"></div>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<ul id="" class="dove">
-		 
-     			
-<li>
-	 
-	<a  href="https://Ye-1900.github.io"> 2020</a></li>
-	
-    
-     			
-<li>
-	 
-	<a  href="https://Ye-1900.github.io/archives"> 杂想</a></li>
-	
-    
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="https://Ye-1900.github.io" class="menu gt-a-link">
+                            2020
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://Ye-1900.github.io/archives" class="menu gt-a-link">
+                            杂想
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1600542866787" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
 
-</ul>
-</li>		
-		
-</ul>				</div>
-			</nav>
-						<div class="jingge">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-			
-<a  href="https://user.qzone.qq.com/2636896962/main" target="_blank" ><i class="iconfont icon-qq"></i></a>
- 
-    
-
-    
-
-    
-        </header>
-
-		<div id="content" class="container">
-			<div class="row">
-	<div class="col-md-8 site-main">
-				
-<article id="post-70" class="post-70 post type-post status-publish format-standard hentry category-5 tag-10 tag-9 tag-11">
-
-	
-	                      
-		<div class="entry-content">
-			<h1 class="wow swing entry-title">自由意志与决定论——笔记</h1>
-<div class="entry-meta">
-<div class="wow bounce">
-	<i class="iconfont icon-rili"> <time class="lately-a" datetime="2020-09-19 10:59:38" itemprop="datePublished" pubdate="">2020-09-19</time></i>
-	          </div>
-			
-</span>
-													 
-		</div>
-                  
-			<div class="wow slideInLeft entry-summary song">
-				<p>封面海报来自于电影《降临》，其改编于特德姜《你一生的故事》。女主在与外星人的交流中，看到了未来，未来的快乐与悲伤都是被确定好的，命运的车轮缓缓而来。可她却像西西弗斯一般，一次次推动终将跌落的滚石，去爱终将离去的女儿。这是一个关于自由意志和决定论的故事。</p>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    自由意志与决定论——笔记
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-09-19 ·
+                    </time>
+                    
+                        <a href="https://Ye-1900.github.io/tag/cONSmPIax/" class="post-tags">
+                            # 读书
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>封面海报来自于电影《降临》，其改编于特德姜《你一生的故事》。女主在与外星人的交流中，看到了未来，未来的快乐与悲伤都是被确定好的，命运的车轮缓缓而来。可她却像西西弗斯一般，一次次推动终将跌落的滚石，去爱终将离去的女儿。这是一个关于自由意志和决定论的故事。</p>
 <!-- more -->
 <h2 id="1因果决定论和非决定论">1.因果决定论和非决定论</h2>
 <h3 id="1什么是因果决定论">1.什么是因果决定论？</h3>
 <p>所有事件都是前一个事件与自然法则共同作用的结果，所有未来将发生的事情都是过去发生的事情和自然法则共同作用的结果。当你无法回到过去，也无法改变自然法则的时候，该发生的都会发生，我们什么也做不了。</p>
 <h3 id="2什么是强决定论">2.什么是强决定论？</h3>
-<p>没有人可以自由地行动，不存在自由意志，所有行为都是被引起的。强决定论不否认我们看上去是有自由意志的，它只是否认事件看上去的样子就是它们真实的样子——即我们对自身运动的真正原因一无所知。比如斯宾诺莎的石头：石头认为自己有自由意志，想从天上落到地下，而真实的情况确实由于引力的作用。我们又何尝不是这些石头呢？<br>
-<img src="https://Ye-1900.github.io/post-images/1600514108654.png" alt="" loading="lazy"></p>
+<p>没有人可以自由地行动，不存在自由意志，所有行为都是被引起的。强决定论不否认我们看上去是有自由意志的，它只是否认事件看上去的样子就是它们真实的样子——即我们对自身运动的真正原因一无所知。比如斯宾诺莎的石头：石头认为自己有自由意志，想从天上落到地下，而真实的情况确实由于引力的作用。我们又何尝不是这些石头呢？</p>
+<figure data-type="image" tabindex="1"><img src="https://Ye-1900.github.io/post-images/1600514108654.png" alt="" loading="lazy"></figure>
 <h3 id="3支持强决定论和论证是什么样的">3.支持强决定论和论证是什么样的？</h3>
 <p>三段论如下：<br>
 1.如果因果论为真，则每件事都是过去的事件和自然法则共同作用的结果。<br>
@@ -160,11 +101,13 @@ window.onload=getCSS();
 3.我们无力自由地行动。<br>
 同时，在强决定论下，不存在道德和责任的问题，因为我们不存在自由意志，无需为自己的行为负责。</p>
 <h3 id="4科学是否表明因果决定论为真">4.科学是否表明因果决定论为真?</h3>
-<p>在早期，科学是支撑因果决定论的，比如著名的拉普拉斯兽。但量子力学中，海森堡提出不确定性原理，即无法同时知道量子的位置与速度，只能用概率的方式去预测。这表明科学是支持非决定论的。<img src="https://Ye-1900.github.io/post-images/1600512337102.png" alt="" loading="lazy"></p>
+<p>在早期，科学是支撑因果决定论的，比如著名的拉普拉斯兽。但量子力学中，海森堡提出不确定性原理，即无法同时知道量子的位置与速度，只能用概率的方式去预测。这表明科学是支持非决定论的。</p>
+<figure data-type="image" tabindex="2"><img src="https://Ye-1900.github.io/post-images/1600512337102.png" alt="" loading="lazy"></figure>
 <h3 id="5什么是非决定论">5.什么是非决定论？</h3>
 <p>认为有些事件并不是过去事件和自然法则的结果。威廉詹姆斯认为，行动是无原因的，这是非决定论。</p>
 <h3 id="6泰勒不可预知的手臂这个思想实验是怎么样的它如何试图动摇非决定论">6.泰勒“不可预知的手臂”这个思想实验是怎么样的？它如何试图动摇非决定论？</h3>
-<p>假设某个手臂的行为（宏观行为）受到量子的控制（微观），这个时候手臂是完全自由且无原因的，满足非决定论。但是手臂为什么要这么做，这些行动无法理解，尽管它否定了因果决定论，但并不会让我们觉得随机的行为是有自由意志的，因此非决定论给予我们的疑惑和决定论一样大。<img src="https://Ye-1900.github.io/post-images/1600512343624.jpg" alt="" loading="lazy"></p>
+<p>假设某个手臂的行为（宏观行为）受到量子的控制（微观），这个时候手臂是完全自由且无原因的，满足非决定论。但是手臂为什么要这么做，这些行动无法理解，尽管它否定了因果决定论，但并不会让我们觉得随机的行为是有自由意志的，因此非决定论给予我们的疑惑和决定论一样大。</p>
+<figure data-type="image" tabindex="3"><img src="https://Ye-1900.github.io/post-images/1600512343624.jpg" alt="" loading="lazy"></figure>
 <h2 id="2相容论">2.相容论</h2>
 <h3 id="1什么是弱决定论">1.什么是弱决定论？</h3>
 <p>因果与自由意志是相容的，即使每件事都是过去的事和自然法则共同作用的结果，我们仍可以自由地行动。</p>
@@ -173,253 +116,89 @@ window.onload=getCSS();
 <h3 id="3斯泰斯如何解释所有行为是有原因的但某些行为却是自由的">3.斯泰斯如何解释，所有行为是有原因的，但某些行为却是自由的？</h3>
 <p>相容论者对自由意志的解释为：自由地行动就是做你想做的。自由的行为是那些直接原因来自于主体的心理状态的行动；而不自由的行动是哪些直接原因来自于主体之外的行动。廉者不受嗟来之食而死是自由的，而在沙漠中没有食物而死是不自由的。</p>
 <h3 id="4泰勒的天才生理学家和瘾君子思想实验是如何动摇传统的相容论">4.泰勒的“天才生理学家”和“瘾君子”思想实验是如何动摇传统的相容论？</h3>
-<p>天才生理学家可以操作某人的意志，被操作者产生的想法其实是天才生理学家想要他产生的。尽管这时满足了传统相容论的两个条件，但我们认为这和自由的行为不同。瘾君子忍不住想要吸毒并且去吸毒，也很难说是自由的。就像《隐秘的角落》中，朱朝阳让严良丢掉录像带，并且故意让张东升听见，这里朝阳同学借刀杀人，引起了张东升的杀人欲望。张东升此时没有选择，他为了保命只能选择干掉严良，很难说他的行为是自由的。<br>
-<img src="https://Ye-1900.github.io/post-images/1600527218377.webp" alt="隐秘的角落" loading="lazy"></p>
+<p>天才生理学家可以操作某人的意志，被操作者产生的想法其实是天才生理学家想要他产生的。尽管这时满足了传统相容论的两个条件，但我们认为这和自由的行为不同。瘾君子忍不住想要吸毒并且去吸毒，也很难说是自由的。就像《隐秘的角落》中，朱朝阳让严良丢掉录像带，并且故意让张东升听见，这里朝阳同学借刀杀人，引起了张东升的杀人欲望。张东升此时没有选择，他为了保命只能选择干掉严良，很难说他的行为是自由的。</p>
+<figure data-type="image" tabindex="4"><img src="https://Ye-1900.github.io/post-images/1600527218377.webp" alt="隐秘的角落" loading="lazy"></figure>
 <h3 id="5什么是分层相容论">5.什么是分层相容论？</h3>
 <p>自由的行动是由一个人决定性的认同的二阶意欲所致。指向事物的欲望称为一阶欲望，例如诉诸衣食住行这些事物的欲望；指向一阶欲望的欲望被称为二阶欲望，例如我希望我有要克制晚上吃夜宵这个欲望的欲望。当我们按照二阶欲望行动，此时被称为二阶意欲。</p>
 <h3 id="6斯洛特被催眠的病人是如何试图动摇分层相容论">6.斯洛特“被催眠的病人”是如何试图动摇分层相容论？</h3>
-<p>在电影盗梦空间里面，一家大公司的老板可以选择继承家业，也可以追逐自己的梦想。而如何选择可以理解为二阶欲望。主角一行人通过层层梦境对老板潜意识的催眠，而成功改变了其二阶意欲，这时老板选择梦想的行为显然不是完全自由的。分层相容论的不足还是在于，二阶意欲的产生可能不出自于自己。<br>
-<img src="https://Ye-1900.github.io/post-images/1600527227755.jpg" alt="盗梦空间中象征虚拟与现实分界线的陀螺" loading="lazy"></p>
+<p>在电影盗梦空间里面，一家大公司的老板可以选择继承家业，也可以追逐自己的梦想。而如何选择可以理解为二阶欲望。主角一行人通过层层梦境对老板潜意识的催眠，而成功改变了其二阶意欲，这时老板选择梦想的行为显然不是完全自由的。分层相容论的不足还是在于，二阶意欲的产生可能不出自于自己。</p>
+<figure data-type="image" tabindex="5"><img src="https://Ye-1900.github.io/post-images/1600527227755.jpg" alt="盗梦空间中象征虚拟与现实分界线的陀螺" loading="lazy"></figure>
 
-							</div>
-	<div class="wow bounceInDown vt-post-tags">
- 
-				<a href="https://Ye-1900.github.io/tag/cONSmPIax/" rel="tag">读书</a>	
-				 
-					</div>						
-<nav class="navigation3 post-navigation3" role="navigation">
-		
-		<div class="nav-links3">
-      
-		 
-		</div>
-	</nav>
-	<div class="wow rollIn author-info" style="visibility: visible; animation-name: rollIn;">
-	<div class="author-avatar pull-left"><img src="https://Ye-1900.github.io/images/avatar.png" ></div>
- 
-	<div class="author-description"><div class="author-title"><div class="author-link" rel="author">叶C</div></div>
-
-
-	<p class="author-bio">梦想的颜色一定是红蓝色</p></div></div>
-	
-		</div>
-		
- 
-		
-</article>
-
-<div id="marlin_lite_about_widget-2" class="wow bounceInUp widget marlin_lite_about_widget" data-wow-delay="0.1s">
-		
-        
-		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://Ye-1900.github.io/media/scripts/Valine.min.js'></script>
-
-<div class="comment"></div>
-<script>
-        new Valine({
-            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-            av: AV, 
-            el: '.comment',
-            lang: 'zh-cn',
-            
-            admin_email:'2636896962@qq.com',
-            
-            
-      emoticon_list: ["吐.png","喷血.png","狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","中指.png","尴尬.png","瞅你.png","想一想.png","中枪.png","得意.png","肿包.png","扇耳光.png","亲亲.png","惊喜.png","脸红.png","无所谓.png","便便.png","愤怒.png","蜡烛.png","献黄瓜.png","内伤.png","投降.png","观察.png","看不见.png","击掌.png","抠鼻.png","邪恶.png","看热闹.png","口水.png","抽烟.png","锁眉.png","装大款.png","吐舌.png","无奈.png","长草.png","赞一个.png","呲牙.png","无语.png","阴暗.png","不出所料.png","咽气.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png","黑线.png","喜极而泣.png","喷水.png","深思.png","鼓掌.png","暗地观察.png"],
-     
-      app_id: 'e1Qb2TWTIzKQdtXQT0slAab5-gzGzoHsz',
-      	
-      
-      app_key: 'Tvqwsq3B4dHEo8hGyNOSW1G3',
-         	
-          
-      placeholder: '给我留言吧，下课一定看'
-       
-        });
-    </script> 
-
-
-   
-  
- 
-
-		</div>
-
-			</div>
-			
-
-
-<div class="tocc col l3 hide-on-med-and-down">
-	
-        <div class="toc-widget">
-			
-            <div class="toc-title"></div>
-			
-            <div id="toc-content">
-			
-			
-			</div>
+                </div>
+            </article>
         </div>
-    </div>
+
+        
+
+        
+            <span id="/post/" class="leancloud_visitors" data-flag-title="自由意志与决定论——笔记">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
+	<div id="vcomments"></div>
+
 <script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '.entry-summary',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
-        });
+	new Valine({
+		el: '#vcomments',
+		appId: 'e1Qb2TWTIzKQdtXQT0slAab5-gzGzoHsz',
+		appKey: 'Tvqwsq3B4dHEo8hGyNOSW1G3',
+		avatar: 'identicon',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '梦想的颜色一定是红蓝色',
+		visitor: true,
+	});
+</script>
 
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
+        
 
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('.entry-summary').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-    });
-</script>										 
-
- 
-       
-
-
-			</div>
-		</div>
-
-		
-		 	<footer id="colophon" class="site-footer">
-
-			<div class="container">
-	
-				<div class="copyright">一个人    一座城<br>Theme:   <a href="https://github.com/alterfang/gridea-theme-pan" target="_blank" title="Pan"><span>Pan</span></a>. Powered by <a href="https://gridea.dev/" target="_blank" title="Gridea"><span>Gridea</span></a></div>		
-			</div>
-		
-		</footer>
-
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">随手涂鸦</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        一个人    一座城
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://Ye-1900.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
 </div>
 
-<script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-<script type='text/javascript' src='https://Ye-1900.github.io/media/scripts/marlin-scripts.js'></script>
- <script src="//tokinx.github.io/lately/lately.min.js"></script>
-  <script>jQuery(document).ready(function(){$.lately({'target':'.lately-a,.lately-b,.lately-c'})});</script>
-  <style type="text/css">a.back_to_top {
-    text-decoration: none;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    background: #f0f0f0;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 36px;
-    font-size: 18px;
-    text-align: center;
-    transition-duration: .5s;
-    transition-propety: background-color;
-    display: none;
-}
-
-a.back_to_top span {
-    color: #888;
-}
-
-a.back_to_top:hover {
-    cursor: pointer;
-    background: #dfdfdf;
-}
-
-a.back_to_top:hover span {
-    color: #555;
-}
-
-@media print, screen and (max-width: 580px) {
-    .back_to_top {
-        display: none !important;
-    }
-}
-
-
-
-</style><a id="back_to_top" href="#" class="back_to_top"><span><i class="iconfont icon-xiangshang"></i></span>
-</a>
-
-
-<script>$(document).ready((function(_this) {
-  return function() {
-    var bt;
-    bt = $('#back_to_top');
-    if ($(document).width() > 480) {
-      $(window).scroll(function() {
-        var st;
-        st = $(window).scrollTop();
-        if (st > 30) {
-          return bt.css('display', 'block');
-        } else {
-          return bt.css('display', 'none');
-        }
-      });
-      return bt.click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 800);
-        return false;
-      });
-    }
-  };
-})(this));
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-		<script data-no-instant>
-    (function ($) {
-        $.extend({
-            adamsOverload: function () {
-                $('.navigation:eq(0)').remove();
-                $("").attr("rel" , "external");
-                $("a[rel='external'],a[rel='external nofollow']").attr("target","_blank");
-                $("a.vi").attr("rel" , "");
-                $.viewImage({
-                    'target'  : 'img',
-                    'exclude' : '.vsmile-icons img,.gallery img',
-                    'delay'   : 300
-                });
-                $.lately({
-                    'target' : '.commentmetadata a,.infos time,.post-list time'
-                });
-                prettyPrint();
-                
-                $('ul.links li a').each(function(){
-                    if($(this).parent().find('.bg').length==0){
-                        $(this).parent().append('<!---<div class="bg" style="background-image:url(https://c3.glgoo.top/s2/favicons?domain='+$(this).attr("href")+')"></div>--->')
-                    }
-                });
-            }
-        });
-    })(jQuery);
-    jQuery.adamsOverload();
-</script>
-
+    </div>
+</div>
 </body>
 </html>
