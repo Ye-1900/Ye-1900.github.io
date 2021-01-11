@@ -2,14 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ye-1900.github.io</id>
     <title></title>
-    <updated>2020-12-27T03:07:28.577Z</updated>
+    <updated>2021-01-11T12:09:04.311Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ye-1900.github.io"/>
     <link rel="self" href="https://Ye-1900.github.io/atom.xml"/>
     <subtitle>诺坎普小王子</subtitle>
     <logo>https://Ye-1900.github.io/images/avatar.png</logo>
     <icon>https://Ye-1900.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, </rights>
+    <rights>All rights reserved 2021, </rights>
+    <entry>
+        <title type="html"><![CDATA[期末简答题复习]]></title>
+        <id>https://Ye-1900.github.io/post/qi-mo-jian-da-ti-fu-xi/</id>
+        <link href="https://Ye-1900.github.io/post/qi-mo-jian-da-ti-fu-xi/">
+        </link>
+        <updated>2021-01-11T12:07:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[复习]]></title>
+        <id>https://Ye-1900.github.io/post/fu-xi/</id>
+        <link href="https://Ye-1900.github.io/post/fu-xi/">
+        </link>
+        <updated>2021-01-11T12:06:10.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[深度学习复习]]></title>
         <id>https://Ye-1900.github.io/post/shen-du-xue-xi-fu-xi/</id>
