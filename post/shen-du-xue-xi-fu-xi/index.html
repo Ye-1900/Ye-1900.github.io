@@ -155,72 +155,195 @@ window.onload=getCSS();
 		</div>
                   
 			<div class="wow slideInLeft entry-summary song">
-				<h2 id="机器学习深度学习人工智能的关系">机器学习，深度学习，人工智能的关系</h2>
-<h3 id="定义">定义</h3>
-<ul>
-<li>人工智能：它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。</li>
-<li>机器学习是人工智能的一个子集。它是人工智能的核心。什么是机器学习？我们习惯上这样理解，传统机器学习就是：用一大堆数据，同时通过各种算法（比如SVM、决策树、逻辑回归等），去训练出来一个模型，然后用这个训练好的模型去完成任务（比如预测任务等）。</li>
-<li>深度学习是一种特殊的机器学习，是机器学习的一个子集。深度学习的概念源于人工神经网络。可以这样归纳：含多隐层的多层感知器就是一种深度学习结构。</li>
-</ul>
-<h3 id="机器学习与深度学习的区别">机器学习与深度学习的区别</h3>
-<p>1.对数据量要求不同</p>
-<ol>
-<li>
-<p>对计算机硬件的要求不同</p>
-</li>
-<li>
-<p>特征处理方式不同<br>
-<img src="https://Ye-1900.github.io/post-images/1609036258906.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>解决问题方式不同<br>
-<img src="https://Ye-1900.github.io/post-images/1609036264286.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>可解释性不同</p>
-</li>
-</ol>
-<p><a href="(https://blog.csdn.net/qq_31502155/article/details/85999981)">资料来源</a></p>
-<h2 id="神经元">神经元</h2>
-<ul>
-<li>神经元的轴突用于发送消息</li>
-<li>树突用于接收消息</li>
-<li>需要达到一定阈值才能发送</li>
-</ul>
-<h2 id="特征工程问题">特征工程问题</h2>
-<h3 id="特征选择">特征选择</h3>
-<ol>
-<li>预处理：经过数据的预处理，如去除噪声等。比如在文本分类中，去 除停用词等
-<ul>
-<li>标准化（归一化）</li>
-<li>标准化（正态处理）</li>
-</ul>
-</li>
-<li>特征提取：从原始数据中提取一些有效的特征。比如在图像分类中， 提取边缘、尺度不变特征变换特征等。
-<ul>
-<li>稀疏编码</li>
-</ul>
-</li>
-<li>特征转换：对特征进行一定的加工，比如降维和升维。降维包括
-<ul>
-<li>特征抽取（Feature Extraction）： PCA、LDA</li>
-<li>特征选择（Feature Selection）：互信息、TF-IDF</li>
-</ul>
-</li>
-</ol>
-<h3 id="深度学习">深度学习</h3>
-<p>深度学习=表示学习+浅层学习<br>
-<img src="https://Ye-1900.github.io/post-images/1609037850809.png" alt="" loading="lazy"><br>
-难点：<strong>贡献度分配问题</strong></p>
-<p>例：</p>
-<p>模型：神经网络</p>
-<p>学习准则：交叉熵损失等</p>
-<p>优化：随机梯度下降</p>
-<h3 id="贡献度分配问题">贡献度分配问题</h3>
-<p>求偏导，反向传播算法</p>
+				<h1 id="深度学习">深度学习</h1>
 <h2 id="神经网络发展历史">神经网络发展历史</h2>
-<p>（暂时先不记，等老师说）</p>
-<p><a href="E:%5CQQdownload%5C2636896962%5CFileRecv%5Cdl.pdf">廖总的dl</a></p>
+<h3 id="第一阶段模型提出1943~1969">第一阶段：模型提出1943~1969</h3>
+<p>**科学家们提出了许多神经元模型和学习规则，如MP模型，“B 型图灵机”，感知器。**在这一时期，神经网络以其独特的结构和处理信息的方法，在许多实际应用 领域（自动控制、模式识别等）中取得了显著的成效．</p>
+<h3 id="第二阶段冰河期1969~1983">第二阶段：冰河期1969~1983</h3>
+<ul>
+<li>1969 年，Marvin Minsky 出版《感知器》一书，指出了神经网络的<strong>两个关键 缺陷</strong>：一是感知器无法处理“异或”回路问题；二是当时的计算机无法支持处理大 型神经网络所需要的计算能力。</li>
+<li><strong><mark>反向传播算法提出1974</mark></strong></li>
+</ul>
+<h3 id="第三阶段反向传播算法引起的复兴1983~1995">第三阶段：反向传播算法引起的复兴1983~1995</h3>
+<ul>
+<li><strong>Hopfield 网络，玻尔兹曼机</strong></li>
+<li><strong><mark>反向传播算法正引起神经网络第二次研究高潮</mark></strong></li>
+<li>[Schmidhuber, 1992]<mark>采用两 步来训练一个多层的循环神经网络，解决了梯度消失问题</mark>
+<ul>
+<li>通过无监督学习的方式来逐层训练每一 层循环神经网络，即预测下一个输入</li>
+<li>通过反向传播算法进行精调</li>
+</ul>
+</li>
+</ul>
+<h3 id="第四阶段流行度降低1995~2006">第四阶段：流行度降低1995~2006</h3>
+<ul>
+<li>**<mark>计算机性能和数据规模不足</mark>**以支持训练 大规模神经网络</li>
+<li>**<mark>其他机器学习模型理论基础更完备</mark>**较之其他机器学习模型（如SVM），神经网络的理论基础不清晰、优化困难、可解释性差等缺点凸显</li>
+</ul>
+<h3 id="第五阶段深度学习的崛起2006~">第五阶段：深度学习的崛起2006~</h3>
+<ul>
+<li><strong><mark>大规模并行计算以及 GPU 设备的普及，计算机的计算能力得以大幅提高</mark></strong></li>
+<li><strong><mark>可供机器学习的数据规模也越来越大</mark></strong></li>
+<li><strong><mark>预训练+精调方法</mark></strong></li>
+</ul>
+<h2 id="前馈神经网络">前馈神经网络</h2>
+<h3 id="常见激活函数与其特点">常见激活函数与其特点</h3>
+<h3 id="前馈步骤">前馈步骤</h3>
+<figure data-type="image" tabindex="1"><img src="https://Ye-1900.github.io/post-images/1611566682583.jpg" alt="" loading="lazy"></figure>
+<h3 id="自动微分">自动微分</h3>
+<h2 id="卷积">卷积</h2>
+<h3 id="仿射变换">仿射变换</h3>
+<figure data-type="image" tabindex="2"><img src="https://Ye-1900.github.io/post-images/1611566691023.png" alt="" loading="lazy"></figure>
+<h3 id="复杂度">复杂度</h3>
+<h4 id="时间复杂度">时间复杂度</h4>
+<p><mark>即模型的运算次数</mark></p>
+<figure data-type="image" tabindex="3"><img src="https://Ye-1900.github.io/post-images/1611566700543.png" alt="" loading="lazy"></figure>
+<h4 id="空间复杂度">空间复杂度</h4>
+<p><mark>空间复杂度（访存量），严格来讲包括两部分：总参数量 + 各层输出特征图。</mark></p>
+<figure data-type="image" tabindex="4"><img src="https://Ye-1900.github.io/post-images/1611566707808.png" alt="" loading="lazy"></figure>
+<h2 id="rnn">RNN</h2>
+<h3 id="bptt">BPTT</h3>
+<figure data-type="image" tabindex="5"><img src="https://Ye-1900.github.io/post-images/1611566715127.png" alt="" loading="lazy"></figure>
+<h3 id="长程依赖问题">长程依赖问题</h3>
+<h4 id="推导与解释">推导与解释</h4>
+<p>在BPTT算法中，将误差项展开得到</p>
+<p class='katex-block katex-error' title='Error: Font metrics not found for font: .'>𝛿_{𝑡,𝑘} = \prod_{𝑡−1} ^{𝜏=𝑘} ( diag(𝑓′ (𝒛_𝜏 ))𝑼^T )𝛿_{𝑡,𝑡.}
+</p>
+<p>如果定义</p>
+<p class='katex-block katex-error' title='Error: Font metrics not found for font: .'>𝛾 ≅ ‖ diag(𝑓′ (𝒛_𝜏 ))𝑼^T‖
+</p>
+<p>则</p>
+<p class='katex-block katex-error' title='Error: Font metrics not found for font: .'>𝛿_{𝑡,𝑘} ≅ 𝛾^{𝑡−𝑘}𝛿_{𝑡,𝑡.}
+</p>
+<p>若**<mark><span class='katex-error' title='Error: Font metrics not found for font: .'>𝛾 &gt; 1</span></mark>**，当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>𝑡</mi><mi mathvariant="normal">−</mi><mi>𝑘</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">𝑡 − 𝑘 → ∞</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">t</span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>时，<span class='katex-error' title='Error: Font metrics not found for font: .'>𝛾^{𝑡−𝑘} → ∞</span>．当间隔<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>𝑡</mi><mi mathvariant="normal">−</mi><mi>𝑘</mi></mrow><annotation encoding="application/x-tex">𝑡 − 𝑘</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">t</span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>比较大时，梯度也变得很 大，会造成系统不稳定，称为<mark>梯度爆炸</mark>问题. 相反，若 <strong><mark><span class='katex-error' title='Error: Font metrics not found for font: .'>𝛾 &lt; 1</span></mark></strong>，当 𝑡 − 𝑘 → ∞ 时，$𝛾^{𝑡−𝑘} →0 $．当间隔 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>𝑡</mi><mi mathvariant="normal">−</mi><mi>𝑘</mi></mrow><annotation encoding="application/x-tex">𝑡 − 𝑘</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">t</span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 比较大时，梯度也变得非常小，会出现和深层前馈神经网络类似的<mark>梯度消失</mark>问题</p>
+<p>因为RNN常用的非线性激活函数为Logistic函数或Tanh函数，其导数小于1，所以常出现梯度消失的情况。</p>
+<p><mark>如果时 刻 𝑡 的输出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝑦</mi><mi>𝑡</mi></msub></mrow><annotation encoding="application/x-tex">𝑦_𝑡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 依赖于时刻 𝑘 的输入 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒙</mi><mi>𝑘</mi></msub></mrow><annotation encoding="application/x-tex">𝒙_𝑘</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.12583em;">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.12583em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，当间隔 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>𝑡</mi><mi mathvariant="normal">−</mi><mi>𝑘</mi></mrow><annotation encoding="application/x-tex">𝑡 − 𝑘</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">t</span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 比较大时，简单神经网络很难建模这种长距离的依赖关系，称为长程依赖问题</mark></p>
+<h4 id="解决方案">解决方案</h4>
+<ul>
+<li>梯度爆炸
+<ul>
+<li>权重衰减</li>
+<li>梯度截断</li>
+</ul>
+</li>
+<li>梯度消失(效果不好，引入门控机制)
+<ul>
+<li>让<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>𝑼</mi><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">𝑼 = I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord boldsymbol" style="margin-right:0.17208em;">U</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span></li>
+<li>让 <span class='katex-error' title='Error: Font metrics not found for font: .'>\frac{𝜕𝒉_t}{𝜕𝒉_{t-1}}=1</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="lstm基于门控的rnn">LSTM（基于门控的RNN）</h3>
+<ul>
+<li>门控机制
+<ul>
+<li>遗忘门<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒇</mi><mi>𝑡</mi></msub></mrow><annotation encoding="application/x-tex">𝒇_𝑡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.21778em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.21778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 控制上一个时刻的内部状态<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒄</mi><mrow><mi>𝑡</mi><mi mathvariant="normal">−</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">𝒄_{𝑡−1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.652771em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.05222em;">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:-0.05222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span> 需要<mark>遗忘</mark>多少信息</li>
+<li>输入门<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒊</mi><mi>𝑡</mi></msub></mrow><annotation encoding="application/x-tex">𝒊_𝑡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84326em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.11387em;">i</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.11387em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 控制当前时刻的候选状态<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mover accent="true"><mi>c</mi><mo>^</mo></mover><mi>𝑡</mi></msub></mrow><annotation encoding="application/x-tex">\hat c_{𝑡}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathdefault">c</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;">^</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 有多少信息需要<mark>保存</mark></li>
+<li>输出门 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒐</mi><mi>𝑡</mi></msub></mrow><annotation encoding="application/x-tex">𝒐_𝑡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.07861em;">o</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07861em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 控制当前时刻的内部状态 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒄</mi><mi>𝑡</mi></msub></mrow><annotation encoding="application/x-tex">𝒄_𝑡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.05222em;">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.05222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 有多少信息需要<mark>输出</mark>给外部状 态<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>𝒉</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">𝒉_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord boldsymbol" style="margin-right:0.09426em;">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.09426em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="6"><img src="https://Ye-1900.github.io/post-images/1611566730345.png" alt="" loading="lazy"></figure>
+<h3 id="习题">习题</h3>
+<ul>
+<li>
+<p><strong>分析延时神经网络、卷积神经网络和循环神经网络的异同点.</strong></p>
+<ul>
+<li>
+<p>同：权值共享</p>
+</li>
+<li>
+<p>异：</p>
+<ul>
+<li>延时神经网络当前层神经元的活性值仅依赖于<mark>前一层神经元的最近K个时刻</mark>的活性值，而循环神经网络当前时刻的活性值依赖<mark>之前所有时刻</mark>的活性值。</li>
+<li>循环神经网络在<mark>时间维度</mark>上共享权重而卷积神经网络在<mark>空间</mark>上共享权重</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="网络优化和正则化">网络优化和正则化</h2>
+<h3 id="优化算法">优化算法</h3>
+<figure data-type="image" tabindex="7"><img src="https://Ye-1900.github.io/post-images/1611566738322.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p>分段常数衰减：每过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">Ti</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">i</span></span></span></span>,学习率下降<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>倍</p>
+</li>
+<li>
+<p>逆时衰减</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>α</mi><mi>t</mi></msub><mo>=</mo><msub><mi>α</mi><mn>0</mn></msub><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>β</mi><mo>×</mo><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\alpha_t=\alpha_0\frac{1}{1+\beta\times t}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.20188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">t</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p>指数衰减</p>
+</li>
+<li>
+<p>余弦衰减</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>α</mi><mi>t</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>α</mi><mn>0</mn></msub><mo>(</mo><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo>(</mo><mfrac><mrow><mi>t</mi><mi>π</mi></mrow><mi>T</mi></mfrac><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">\alpha_t=\frac{1}{2}\alpha_0(1+\cos(\frac{t\pi}{T}))
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.9780799999999998em;vertical-align:-0.686em;"></span><span class="mop">cos</span><span class="mopen">(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.29208em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+</ul>
+<h3 id="常用的参数初始化的方法">常用的参数初始化的方法</h3>
+<h4 id="常见的三种方法">常见的三种方法</h4>
+<ul>
+<li><mark>预训练初始化</mark>：即用别的模型给定一个较好的初始值。预训练模型在目标任务上的学习过 程也称为精调</li>
+<li><mark>随机初始化</mark>。如果参数均为0，前向计算出的所有隐藏层的激活值都一样，反向传播算出的权重更新值也一样，这是<mark>对称权重现象</mark></li>
+<li><mark>固定值初始化</mark>：有些特定的参数，利用经验，给定特点的值。</li>
+</ul>
+<h4 id="基于固定方差的参数初始化">基于固定方差的参数初始化</h4>
+<p>从一个固定均值（通常为0）和方差𝜎 2 的分布中采样来生成参数的初始值</p>
+<ul>
+<li>
+<p>高斯分布</p>
+</li>
+<li>
+<p>均值分布（此处建议看书，懒得打，pdf184）</p>
+</li>
+</ul>
+<h3 id="超参数优化">超参数优化</h3>
+<ul>
+<li>网络结构，包括神经元之间的连接关系、层数、每层的神经元数量、激活 函数的类型等。</li>
+<li>优化参数，包括优化方法、学习率、小批量的样本数量等。</li>
+<li>正则化系数</li>
+</ul>
+<p>超参数优化是个<mark>组合</mark>优化问题，比较简单的方法有网格搜索：Grid Search。连续值离散化，然后再排列组合。</p>
+<h2 id="注意力机制和外部记忆">注意力机制和外部记忆</h2>
+<h3 id="记忆增强网络">记忆增强网络</h3>
+<h3 id="端到端记忆网络神经图灵机">端到端记忆网络&amp;神经图灵机</h3>
+<p>异同：</p>
+<ul>
+<li>不同
+<ul>
+<li>端到端的外部记忆单元只可读，而神经图灵机的外部记忆单元可以读写</li>
+<li>端到端使用多跳方式进行多轮交互</li>
+<li>神经图灵机具有增加和删除功能</li>
+</ul>
+</li>
+<li>相同
+<ul>
+<li>均用于保存旧的外部记忆</li>
+</ul>
+</li>
+</ul>
+<h2 id="无监督学习">无监督学习</h2>
+<h3 id="pca">PCA</h3>
+<p>主成分分析是一种最常用的数据降维方法，使得在转换后的空间中数据的方差最大。 从而最大化数据的差异性保留原始信息</p>
+<h5 id="基本思路">基本思路</h5>
+<figure data-type="image" tabindex="8"><img src="https://Ye-1900.github.io/post-images/1611566750395.png" alt="" loading="lazy"></figure>
+<h5 id="推导">推导</h5>
+<figure data-type="image" tabindex="9"><img src="https://Ye-1900.github.io/post-images/1611566758157.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://Ye-1900.github.io/post-images/1611566765911.png" alt="" loading="lazy"></figure>
+<h2 id="模型独立学习">模型独立学习</h2>
+<h3 id="集成学习">集成学习</h3>
+<ul>
+<li>bagging：通过随机构造训练样本、随机选择特征等方法来提高每个基模型的独立 性，代表性方法有Bagging 和随机森林等。</li>
+<li>boosting：按照一定的顺序来先后训练不同的基模型，每个模型都针对前序模型的 错误进行专门训练。根据前序模型的结果，来调整训练样本的权重，从而增加不同基 模型之间的差异性。</li>
+</ul>
+<h1 id="深度学习作业">深度学习作业</h1>
+<h2 id="前馈神经">前馈神经</h2>
+<figure data-type="image" tabindex="11"><img src="https://Ye-1900.github.io/post-images/1611566774687.png" alt="" loading="lazy"></figure>
+<h2 id="卷积-v">卷积                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   v</h2>
+<figure data-type="image" tabindex="12"><img src="https://Ye-1900.github.io/post-images/1611566786351.png" alt="" loading="lazy"></figure>
 
 							</div>
 	<div class="wow bounceInDown vt-post-tags">
