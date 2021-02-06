@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ye-1900.github.io</id>
     <title></title>
-    <updated>2021-02-06T13:05:29.861Z</updated>
+    <updated>2021-02-06T13:10:12.557Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ye-1900.github.io"/>
     <link rel="self" href="https://Ye-1900.github.io/atom.xml"/>
@@ -66,6 +66,17 @@
         <summary type="html"><![CDATA[<p>避免重复造轮子，但是有些还是自己写的自己看的舒服</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>避免重复造轮子，但是有些还是自己写的自己看的舒服</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020读书小结]]></title>
+        <id>https://Ye-1900.github.io/post/2020-du-shu-xiao-jie/</id>
+        <link href="https://Ye-1900.github.io/post/2020-du-shu-xiao-jie/">
+        </link>
+        <updated>2020-12-31T13:00:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>2020是我重拾阅读的一年，一方面，相比及时反馈的游戏或者画面丰富的影视，文字图片可能很难一时半会抓住我的注意力，所以今年读的书，几乎没有特别难啃的大部头；另一方面，阅读对于我来说，更像是一种休闲的生活方式，乘兴而来，尽兴而返，如是而已。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>2020是我重拾阅读的一年，一方面，相比及时反馈的游戏或者画面丰富的影视，文字图片可能很难一时半会抓住我的注意力，所以今年读的书，几乎没有特别难啃的大部头；另一方面，阅读对于我来说，更像是一种休闲的生活方式，乘兴而来，尽兴而返，如是而已。</p>
 ]]></content>
     </entry>
     <entry>
